@@ -11,16 +11,37 @@ layout: null
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      padding-top: 80px;
     }
     .navbar {
       background-color: #00274C;
       overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      transition: padding 0.3s;
+    }
+    .navbar.shrink {
+      padding: 4px 0;
+    }
+    .navbar img.logo {
+      height: 50px;
+      margin-left: 10px;
+      transition: height 0.3s;
+    }
+    .navbar.shrink img.logo {
+      height: 30px;
     }
     .navbar ul {
       margin: 0;
       padding: 0;
       list-style: none;
       display: flex;
+      flex-grow: 1;
     }
     .navbar li {
       position: relative;
@@ -54,17 +75,21 @@ layout: null
     .hero {
       position: relative;
       text-align: center;
-      color: #FFCB05;
+      color: #00274C;
     }
     .hero img {
       width: 100%;
       height: auto;
     }
+    .hero-text h1 {
+      font-size: 4em;
+      margin: 0.2em 0;
+    }
     .hero-text {
       position: absolute;
-      top: 50%;
+      top: 10%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
     }
     .calendar {
       margin: 40px;
@@ -96,16 +121,8 @@ layout: null
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab Image">
-    <div class="hero-text">
-      <img src="{{ '/media/umich-coe2.png' | relative_url }}" alt="University of Michigan, College of Engineering">
-      <h1>Engineering 100-950</h1>
-      <p>Electronics for Atmospheric &amp; Space Measurements</p>
-      <button class="support" onclick="alert('Thank you for your interest in supporting the lab!')">Support the Lab</button>
-    </div>
-  </div>
   <nav class="navbar">
+    <img class="logo" src="{{ '/media/umich-coe2.png' | relative_url }}" alt="University of Michigan, College of Engineering">
     <ul>
       <li class="dropdown"><a href="#">Course Info</a>
         <ul class="dropdown-content">
@@ -128,6 +145,15 @@ layout: null
       </li>
     </ul>
   </nav>
+  <div class="hero">
+    <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab Image">
+    <div class="hero-text">
+      <img src="{{ '/media/umich-coe1.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+      <h1>Engineering 100-950</h1>
+      <p>Electronics for Atmospheric &amp; Space Measurements</p>
+      <button class="support" onclick="alert('Thank you for your interest in supporting the lab!')">Support the Lab</button>
+    </div>
+  </div>
   <section class="about">
     <h2>Welcome to Engineering 100-950!</h2>
     <p>Welcome to Engineering 100-950! Over the course of the next semester, you will be learning how to solder, program Arduino micro-controllers, design circuit boards, create 3D CAD files, and launch high-altitude weather balloons!</p>
@@ -162,5 +188,15 @@ layout: null
   <div class="calendar">
     <iframe src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+      } else {
+        navbar.classList.remove('shrink');
+      }
+    });
+  </script>
 </body>
 </html>
