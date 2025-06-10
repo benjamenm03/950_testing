@@ -1,5 +1,5 @@
 ---
-layout: spec
+layout: null
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -97,9 +97,9 @@ layout: spec
 </head>
 <body>
   <div class="hero">
-    <img src="/media/soldering-lab1.png" alt="Soldering Lab Image">
+    <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab Image">
     <div class="hero-text">
-      <img src="/media/umich-coe1.png" alt="University of Michigan, College of Engineering">
+      <img src="{{ '/media/umich-coe1.png' | relative_url }}" alt="University of Michigan, College of Engineering">
       <h1>Engineering 100-950</h1>
       <p>Electronics for Atmospheric &amp; Space Measurements</p>
       <button class="support" onclick="alert('Thank you for your interest in supporting the lab!')">Support the Lab</button>
@@ -109,21 +109,21 @@ layout: spec
     <ul>
       <li class="dropdown"><a href="#">Course Info</a>
         <ul class="dropdown-content">
-          <li><a href="/syllabus">Syllabus</a></li>
+          <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
           <li><a href="https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Course Calendar</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#">Activities</a>
         <ul class="dropdown-content">
-          <li><a href="/labs/">Labs</a></li>
-          <li><a href="/soldering/solder-challenge.md">Solder Challenge</a></li>
-          <li><a href="/project/project.md">Project Spec</a></li>
+          <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
+          <li><a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Solder Challenge</a></li>
+          <li><a href="{{ '/project/project.md' | relative_url }}">Project Spec</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#">Resources</a>
         <ul class="dropdown-content">
-          <li><a href="/tutorials">Tutorials</a></li>
-          <li><a href="/resources">Supplemental Resources</a></li>
+          <li><a href="{{ '/tutorials' | relative_url }}">Tutorials</a></li>
+          <li><a href="{{ '/resources' | relative_url }}">Supplemental Resources</a></li>
         </ul>
       </li>
     </ul>
@@ -136,27 +136,27 @@ layout: spec
   <section class="links">
     <div class="link-group">
       <h3>Syllabus</h3>
-      <p>View the syllabus <a href="/syllabus">here</a>.</p>
+      <p>View the syllabus <a href="{{ '/syllabus' | relative_url }}">here</a>.</p>
     </div>
     <div class="link-group">
       <h3>Labs</h3>
-      <p>The labs will be made publicly visible as they are released in the week leading up to lab. You can find them linked <a href="/labs/">here</a>.</p>
+      <p>The labs will be made publicly visible as they are released in the week leading up to lab. You can find them linked <a href="{{ '/labs/' | relative_url }}">here</a>.</p>
     </div>
     <div class="link-group">
       <h3>Solder Challenge</h3>
-      <p>Soldering tutorial and challenge to gain or improve soldering abilities. <a href="/soldering/solder-challenge.md">Soldering Challenge</a></p>
+      <p>Soldering tutorial and challenge to gain or improve soldering abilities. <a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Soldering Challenge</a></p>
     </div>
     <div class="link-group">
       <h3>Project</h3>
-      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report is <a href="/project/project.md">here</a>.</p>
+      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report is <a href="{{ '/project/project.md' | relative_url }}">here</a>.</p>
     </div>
     <div class="link-group">
       <h3>Tutorials</h3>
-      <p>View all walk-through tutorials on how to install, use, and debug resources we are using <a href="/tutorials">here</a>.</p>
+      <p>View all walk-through tutorials on how to install, use, and debug resources we are using <a href="{{ '/tutorials' | relative_url }}">here</a>.</p>
     </div>
     <div class="link-group">
       <h3>Supplemental Resources</h3>
-      <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more. Check them out <a href="/resources">here</a>.</p>
+      <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more. Check them out <a href="{{ '/resources' | relative_url }}">here</a>.</p>
     </div>
   </section>
   <div class="calendar">
