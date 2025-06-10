@@ -104,9 +104,9 @@ layout: null
       font-size: 1.2em;
     }
     .hero-text img.eng-logo {
-      width: 240px;
+      width: 250px;
       display: block;
-      margin: 20px auto 0;
+      margin: 25px auto 0;
     }
     .calendar {
       margin: 40px;
@@ -148,19 +148,18 @@ layout: null
   <nav class="navbar">
     <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
     <ul>
-      <li class="dropdown"><a href="#">Course Info</a>
+      <li class="dropdown"><a href="{{ '/syllabus' | relative_url }}">Syllabus</a>
         <ul class="dropdown-content">
-          <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
           <li><a href="https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Course Calendar</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a href="#">Activities</a>
+      <li class="dropdown"><a href="{{ '/labs/' | relative_url }}">Labs</a>
         <ul class="dropdown-content">
-          <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
           <li><a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Solder Challenge</a></li>
           <li><a href="{{ '/project/project.md' | relative_url }}">Project Spec</a></li>
         </ul>
       </li>
+      <li><a href="{{ '/project/project.md' | relative_url }}">Project</a></li>
       <li class="dropdown"><a href="#">Resources</a>
         <ul class="dropdown-content">
           <li><a href="{{ '/tutorials' | relative_url }}">Tutorials</a></li>
