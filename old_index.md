@@ -37,7 +37,7 @@ Soldering tutorial and challenge to gain or improve soldering abilites.
 
 The full project specification, including PDR, Go/No-Go tests, poster, and final report is here:
 
-[Project Specification](/project/project.md)
+[Project Specification](/project/project)
 
 ## Tutorials
 
