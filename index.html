@@ -127,6 +127,21 @@ layout: null
       margin-top: 0;
       color: #00274C;
     }
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #FFCB05;
+      color: #00274C;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    .button-link:hover {
+      background-color: #e1b700;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -170,27 +185,33 @@ layout: null
   <section class="links">
     <div class="link-group">
       <h3>Syllabus</h3>
-      <p>View the syllabus <a href="{{ '/syllabus' | relative_url }}">here</a>.</p>
+      <p>Learn about course policies and the weekly schedule.</p>
+      <a class="button-link" href="{{ '/syllabus' | relative_url }}">View Syllabus</a>
     </div>
     <div class="link-group">
       <h3>Labs</h3>
-      <p>The labs will be made publicly visible as they are released in the week leading up to lab. You can find them linked <a href="{{ '/labs/' | relative_url }}">here</a>.</p>
+      <p>The labs will be made publicly visible as they are released in the week leading up to lab.</p>
+      <a class="button-link" href="{{ '/labs/' | relative_url }}">Go to Labs</a>
     </div>
     <div class="link-group">
       <h3>Solder Challenge</h3>
-      <p>Soldering tutorial and challenge to gain or improve soldering abilities. <a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Soldering Challenge</a></p>
+      <p>Soldering tutorial and challenge to gain or improve soldering abilities.</p>
+      <a class="button-link" href="{{ '/soldering/solder-challenge.md' | relative_url }}">Soldering Challenge</a>
     </div>
     <div class="link-group">
       <h3>Project</h3>
-      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report is <a href="{{ '/project/project.md' | relative_url }}">here</a>.</p>
+      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report.</p>
+      <a class="button-link" href="{{ '/project/project.md' | relative_url }}">Project Spec</a>
     </div>
     <div class="link-group">
       <h3>Tutorials</h3>
-      <p>View all walk-through tutorials on how to install, use, and debug resources we are using <a href="{{ '/tutorials' | relative_url }}">here</a>.</p>
+      <p>View all walk-through tutorials on how to install, use, and debug resources we are using.</p>
+      <a class="button-link" href="{{ '/tutorials' | relative_url }}">View Tutorials</a>
     </div>
     <div class="link-group">
       <h3>Supplemental Resources</h3>
-      <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more. Check them out <a href="{{ '/resources' | relative_url }}">here</a>.</p>
+      <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.</p>
+      <a class="button-link" href="{{ '/resources' | relative_url }}">Supplemental Resources</a>
     </div>
   </section>
   <div class="calendar">
