@@ -149,43 +149,24 @@ layout: null
 
     @media (max-width: 600px) {
       .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
       }
       .navbar img.logo {
         display: none;
       }
-      .mobile-menu-button {
-        display: block;
-        background: none;
-        border: none;
-        color: #FFCB05;
-        font-size: 1.5em;
-        margin-left: auto;
-        margin-right: 10px;
-        cursor: pointer;
-      }
       .nav-links {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-      }
-      .nav-links.show {
+        flex-direction: row;
+        width: auto;
         display: flex;
       }
       .navbar li {
-        width: 100%;
+        width: auto;
       }
       .navbar a {
-        padding: 10px 20px;
+        padding: 10px;
       }
       .dropdown-content {
-        display: none;
-      }
-    }
-
-    @media (min-width: 601px) {
-      .mobile-menu-button {
         display: none;
       }
     }
@@ -194,7 +175,6 @@ layout: null
 <body>
   <nav class="navbar">
     <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
-    <button class="mobile-menu-button">☰ Menu</button>
     <ul class="nav-links">
       <li class="dropdown"><a href="{{ '/syllabus' | relative_url }}">Syllabus</a>
         <ul class="dropdown-content">
@@ -273,13 +253,6 @@ layout: null
         navbar.classList.remove('shrink');
       }
     });
-    var menuButton = document.querySelector('.mobile-menu-button');
-    var navLinks = document.querySelector('.nav-links');
-    if (menuButton) {
-      menuButton.addEventListener('click', function() {
-        navLinks.classList.toggle('show');
-      });
-    }
   </script>
 </body>
 </html>
