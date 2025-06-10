@@ -56,7 +56,7 @@ Office hours are a chance to get to know the course staff, to get clarification 
 **For an up-to-date listing of office hours, always refer to the google calendar!**
 [There is a google calendar available here.](https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
-<iframe src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## Canvas & Course Resources
 

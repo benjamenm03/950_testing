@@ -54,4 +54,4 @@ Calendar containing office hours and lecture/lab/discussion times.
 
 [Link to course calendar](https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
-<iframe src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
