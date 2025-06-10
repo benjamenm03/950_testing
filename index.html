@@ -80,7 +80,7 @@ layout: null
       height: 80vh;
       overflow: hidden;
     }
-    .hero img {
+    .hero > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -104,19 +104,13 @@ layout: null
       font-size: 1.2em;
     }
     .hero-text img.eng-logo {
-      width: 180px;
+      width: 200px;
+      display: block;
+      margin: 0 auto;
     }
     .calendar {
       margin: 40px;
       text-align: center;
-    }
-    .support {
-      background-color: #FFCB05;
-      color: #00274C;
-      padding: 10px 20px;
-      border: none;
-      font-size: 1.1em;
-      cursor: pointer;
     }
     .about, .links {
       max-width: 800px;
@@ -166,7 +160,6 @@ layout: null
       <h1>Engineering 100-950</h1>
       <p>Electronics for Atmospheric &amp; Space Measurements</p>
       <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
-      <button class="support" onclick="alert('Thank you for your interest in supporting the lab!')">Support the Lab</button>
     </div>
   </div>
   <section class="about">
