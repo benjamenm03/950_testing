@@ -31,7 +31,7 @@ The labs will be made publicly visible as they are released in the week leading 
 
 Soldering tutorial and challenge to gain or improve soldering abilites.
 
-[Soldering Challenge](/soldering/solder-challenge.md)
+[Soldering Challenge](/soldering/solder-challenge)
 
 ## Project
 

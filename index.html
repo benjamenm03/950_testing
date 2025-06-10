@@ -148,9 +148,23 @@ layout: null
         flex-direction: column;
         align-items: flex-start;
       }
-      .navbar ul {
+      .mobile-menu-button {
+        display: block;
+        background: none;
+        border: none;
+        color: #FFCB05;
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .nav-links {
         flex-direction: column;
         width: 100%;
+        display: none;
+      }
+      .nav-links.show {
+        display: flex;
       }
       .navbar li {
         width: 100%;
@@ -159,12 +173,13 @@ layout: null
         padding: 10px 20px;
       }
       .dropdown-content {
-        display: block;
-        position: relative;
-        background-color: transparent;
+        display: none;
       }
-      .dropdown-content a {
-        padding-left: 30px;
+    }
+
+    @media (min-width: 601px) {
+      .mobile-menu-button {
+        display: none;
       }
     }
   </style>
@@ -172,7 +187,8 @@ layout: null
 <body>
   <nav class="navbar">
     <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
-    <ul>
+    <button class="mobile-menu-button">☰ Menu</button>
+    <ul class="nav-links">
       <li class="dropdown"><a href="{{ '/syllabus' | relative_url }}">Syllabus</a>
         <ul class="dropdown-content">
           <li><a href="https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Course Calendar</a></li>
@@ -180,7 +196,7 @@ layout: null
       </li>
       <li class="dropdown"><a href="{{ '/labs/' | relative_url }}">Labs</a>
         <ul class="dropdown-content">
-          <li><a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Solder Challenge</a></li>
+          <li><a href="{{ '/soldering/solder-challenge' | relative_url }}">Solder Challenge</a></li>
           <li><a href="{{ '/project/project' | relative_url }}">Project Spec</a></li>
         </ul>
       </li>
@@ -220,7 +236,7 @@ layout: null
     <div class="link-group">
       <h3>Solder Challenge</h3>
       <p>Soldering tutorial and challenge to gain or improve soldering abilities.</p>
-      <a class="button-link" href="{{ '/soldering/solder-challenge.md' | relative_url }}">Soldering Challenge</a>
+      <a class="button-link" href="{{ '/soldering/solder-challenge' | relative_url }}">Soldering Challenge</a>
     </div>
     <div class="link-group">
       <h3>Project</h3>
@@ -250,6 +266,13 @@ layout: null
         navbar.classList.remove('shrink');
       }
     });
+    var menuButton = document.querySelector('.mobile-menu-button');
+    var navLinks = document.querySelector('.nav-links');
+    if (menuButton) {
+      menuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+      });
+    }
   </script>
 </body>
 </html>
