@@ -142,6 +142,31 @@ layout: null
       background-color: #e1b700;
       transform: translateY(-2px);
     }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      .navbar li {
+        width: 100%;
+      }
+      .navbar a {
+        padding: 10px 20px;
+      }
+      .dropdown-content {
+        display: block;
+        position: relative;
+        background-color: transparent;
+      }
+      .dropdown-content a {
+        padding-left: 30px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -156,11 +181,11 @@ layout: null
       <li class="dropdown"><a href="{{ '/labs/' | relative_url }}">Labs</a>
         <ul class="dropdown-content">
           <li><a href="{{ '/soldering/solder-challenge.md' | relative_url }}">Solder Challenge</a></li>
-          <li><a href="{{ '/project/project.md' | relative_url }}">Project Spec</a></li>
+          <li><a href="{{ '/project/project' | relative_url }}">Project Spec</a></li>
         </ul>
       </li>
-      <li><a href="{{ '/project/project.md' | relative_url }}">Project</a></li>
-      <li class="dropdown"><a href="#">Resources</a>
+      <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
+      <li class="dropdown"><a href="{{ '/resources' | relative_url }}">Resources</a>
         <ul class="dropdown-content">
           <li><a href="{{ '/tutorials' | relative_url }}">Tutorials</a></li>
           <li><a href="{{ '/resources' | relative_url }}">Supplemental Resources</a></li>
@@ -200,7 +225,7 @@ layout: null
     <div class="link-group">
       <h3>Project</h3>
       <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report.</p>
-      <a class="button-link" href="{{ '/project/project.md' | relative_url }}">Project Spec</a>
+      <a class="button-link" href="{{ '/project/project' | relative_url }}">Project Spec</a>
     </div>
     <div class="link-group">
       <h3>Tutorials</h3>
