@@ -11,7 +11,7 @@ layout: null
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      padding-top: 80px;
+      padding-top: 0;
     }
     .navbar {
       background-color: #00274C;
@@ -41,7 +41,8 @@ layout: null
       padding: 0;
       list-style: none;
       display: flex;
-      flex-grow: 1;
+      margin-left: auto;
+      justify-content: flex-end;
     }
     .navbar li {
       position: relative;
@@ -76,10 +77,13 @@ layout: null
       position: relative;
       text-align: center;
       color: #00274C;
+      height: 60vh;
+      overflow: hidden;
     }
     .hero img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
     .hero-text h1 {
       font-size: 4em;
@@ -87,9 +91,12 @@ layout: null
     }
     .hero-text {
       position: absolute;
-      top: 10%;
+      top: 5%;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+    .hero-text img.eng-logo {
+      width: 180px;
     }
     .calendar {
       margin: 40px;
@@ -148,9 +155,9 @@ layout: null
   <div class="hero">
     <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab Image">
     <div class="hero-text">
-      <img src="{{ '/media/umich-coe1.png' | relative_url }}" alt="University of Michigan, College of Engineering">
       <h1>Engineering 100-950</h1>
       <p>Electronics for Atmospheric &amp; Space Measurements</p>
+      <img class="eng-logo" src="{{ '/media/umich-coe1.png' | relative_url }}" alt="University of Michigan, College of Engineering">
       <button class="support" onclick="alert('Thank you for your interest in supporting the lab!')">Support the Lab</button>
     </div>
   </div>
