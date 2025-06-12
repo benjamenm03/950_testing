@@ -87,3 +87,20 @@ body {
 .dropdown-content.show {
   display: block;
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav-links .dropdown button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
