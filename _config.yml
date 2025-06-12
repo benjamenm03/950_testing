@@ -1,15 +1,12 @@
 remote_theme: eecs485staff/primer-spec
 plugins:
-    - jekyll-remote-theme
-    - jekyll-optional-front-matter
-    - jekyll-readme-index
-    - jekyll-relative-links
-    - jemoji
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jemoji
 kramdown:
-    input: GFM
+  input: GFM
 readme_index:
-    remove_originals: true
-    with_frontmatter: true
-
-title: Engineering 100-950
-description: "Homepage of UMich ENGR 100-950: Electronics for Atmospheric & Space Measurements"
+  remove_originals: true
+  with_frontmatter: true
