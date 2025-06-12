@@ -24,10 +24,7 @@ body {
     padding: 10px 50px;
 }
 .header.shrink .branding img {
-    height: 40px;
-}
-.header.shrink .branding h1 {
-    font-size: 20px;
+    width: 25%;
 }
 .branding {
     display: flex;
@@ -39,13 +36,9 @@ body {
     gap: 10px;
 }
 .branding img {
-    height: 60px;
+    width: 25%;
+    height: auto;
     margin-right: 20px;
-}
-.branding h1 {
-    color: var(--secondary-color);
-    margin: 0;
-    font-size: 24px;
 }
 .dropdown {
     position: relative;
@@ -144,6 +137,11 @@ body {
         flex-direction: column;
         padding: 10px 20px;
         align-items: flex-start;
+    }
+
+    .branding img {
+        width: 100%;
+        margin-right: 0;
     }
 
     .nav-links {
